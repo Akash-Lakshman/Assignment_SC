@@ -46,9 +46,9 @@ public class Client {
           os.println(inputLine.readLine());
         }
 
-        /*
-         * Close the output stream, close the input stream, close the socket.
-         */
+        
+         //Close the output stream, close the input stream, close the socket.
+         
         os.close();
         is.close();
 
