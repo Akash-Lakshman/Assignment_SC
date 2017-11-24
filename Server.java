@@ -213,8 +213,9 @@ public void run() {
 			Functions hf = new Functions();
 			hf .processErrorMessage(s[0],os);
 		}
-		new ClientWriterThread(os,s).start();
+		new ClientHandler(os,s).start();
 		flag=true;
+	    	System.out.println("Main Thread End of block);
 	}
 } catch (IOException e) {
 	System.out.println("IO Exception in main Thread::"+e +"::");
